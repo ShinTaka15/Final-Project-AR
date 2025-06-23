@@ -1,0 +1,82 @@
+@Sub SRSurface = SRSurfaceParallaxMap
+    Normal Map = @Tex file "../Textures/color_01_normal.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/color_01_normal.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Scale & Bias = 1
+    Flip X = 1
+    Flip Y = 0
+    Flip Z = 0
+    Object Space = 0
+    Height Map = @Tex file "../Textures/color_01_displacement.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/color_01_displacement.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Depth = 0.0617709
+    Depth Center = 1
+@End
+
+@Sub SRMicrosurface = SRMicrosurfaceRoughnessMap
+    Roughness Map = @Tex file "../Textures/color_01_roughness.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/color_01_roughness.png" srgb 0 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel = 0
+    Roughness = 1
+    Invert;roughness = 0
+@End
+
+@Sub SRAlbedo = SRAlbedoMap
+    Albedo Map = @Tex file "../Textures/eye_05_basecolor.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/eye_05_basecolor.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 1 1 1
+@End
+
+@Sub SRDiffusion = SRDiffusionLambertian
+@End
+
+@Sub SRReflectivity = SRReflectivitySpecularMap
+    Specular Map = nil
+    Channel;specular = 4
+    Intensity = 0.0653732
+    Color = 0.8 0.8 0.8
+    Fresnel = 1
+    Fresnel Color = 1 1 1
+    Conserve Energy = 1
+@End
+
+@Sub SRReflection = SRReflectionGGX
+    Horizon Occlusion = 1
+@End
+
+@Sub SRReflection2 = SRReflectionGGX
+    Horizon Occlusion = 0
+    Secondary Gloss = 1.14172
+    Secondary Intensity = 1.04597
+    Secondary Intensity Color = 1 1 1
+    Secondary Fresnel = 0
+    Secondary Fresnel Color = 1 1 1
+@End
+
+@Sub SROcclusion = SROcclusionMap
+    Occlusion Map = @Tex file "../Textures/eye_05_ambientocclusion.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/eye_05_ambientocclusion.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;occlusion = 0
+    Occlusion = 0.643564
+    UV Set = 0
+    Vertex Channel = 0
+    Cavity Map = @Tex file "../Textures/eye_05_ambientocclusion.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/eye_05_ambientocclusion.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Channel;cavity = 0
+    Diffuse Cavity = 0
+    Specular Cavity = 0
+@End
+
+@Sub SREmissive = SREmissiveMap
+    Emissive Map = @Tex file "../Textures/eye_05_emissive.png" fileFull "E:/blenders/Sale/16_Eye/eye_demo_version/Marmoset Toolbag 3 demo scene/Assets/Textures/eye_05_emissive.png" srgb 1 filter 1 mip 1 aniso 4 wrap 1 visible 1 @EndTex
+    Color = 1 1 1
+    Intensity = 0.00496942
+    UV Set = 0
+    Glow = 0 0 0
+@End
+
+@Sub SRMerge = SRMerge
+    Texture Tiling = 1
+    Tile U = 1
+    Offset U = 0
+    Tile V = 1
+    Offset V = 0
+    Wrap = 1
+    Aniso = 2
+    Filter = 1
+@End
+

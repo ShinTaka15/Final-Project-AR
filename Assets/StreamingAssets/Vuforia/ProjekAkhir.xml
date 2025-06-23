@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Jantung" size="100.000000 100.000000" />
+    <ImageTarget name="Mata" size="100.000000 100.000000" />
+    <ImageTarget name="Paru-Paru" size="100.000000 100.000000" />
+    <ImageTarget name="Otak" size="100.000000 100.000000" />
+    <ImageTarget name="heart_marker" size="100.000000 100.000000" />
+    <ImageTarget name="lung_marker" size="100.000000 100.000000" />
+    <ImageTarget name="eye_marker" size="100.000000 100.000000" />
+    <ImageTarget name="brain_marker" size="100.000000 100.000000" />
+  </Tracking>
+</QCARConfig>
